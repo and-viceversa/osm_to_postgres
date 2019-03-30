@@ -1,6 +1,8 @@
 # osm_to_postgres
 -Bash workflow for downloading, simple preprocessing, and loading Open Street Map data into a PostgreSQL/PostGIS database.
+
 -These scripts probably aren't directly useful to you, but you can follow the workflow quickly and modify for your own purposes.
+
 -The [OSM wiki and documentation](https://wiki.openstreetmap.org/wiki/Databases_and_data_access_APIs#osm2pgsql) has become much more complete than when I wrote these scripts.
 
 ### Setup
