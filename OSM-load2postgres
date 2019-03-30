@@ -1,0 +1,162 @@
+#!/bin/bash
+
+echo
+echo ----------Creating PostGIS Country Databases----------
+echo "Note: If you've already run this script, database creation will fail because the databases already exist. It's fine. Ignore this. "
+
+echo
+
+createdb -O word -T template_postgis -p 5432 -U word aruba
+createdb -O word -T template_postgis -p 5432 -U word anguilla
+createdb -O word -T template_postgis -p 5432 -U word antigua_and_barbuda
+createdb -O word -T template_postgis -p 5432 -U word bahamas
+createdb -O word -T template_postgis -p 5432 -U word bajo_nuevo_bank
+createdb -O word -T template_postgis -p 5432 -U word belize
+createdb -O word -T template_postgis -p 5432 -U word barbados
+createdb -O word -T template_postgis -p 5432 -U word bermuda
+createdb -O word -T template_postgis -p 5432 -U word british_virgin_islands
+createdb -O word -T template_postgis -p 5432 -U word caymen_islands
+createdb -O word -T template_postgis -p 5432 -U word costarica
+createdb -O word -T template_postgis -p 5432 -U word cuba
+createdb -O word -T template_postgis -p 5432 -U word curacao
+createdb -O word -T template_postgis -p 5432 -U word dominica
+createdb -O word -T template_postgis -p 5432 -U word dominican_republic
+createdb -O word -T template_postgis -p 5432 -U word elsalvador
+createdb -O word -T template_postgis -p 5432 -U word grenada
+createdb -O word -T template_postgis -p 5432 -U word guatemala
+createdb -O word -T template_postgis -p 5432 -U word haiti
+createdb -O word -T template_postgis -p 5432 -U word honduras
+createdb -O word -T template_postgis -p 5432 -U word jamaica
+createdb -O word -T template_postgis -p 5432 -U word mexico
+createdb -O word -T template_postgis -p 5432 -U word montserrat
+createdb -O word -T template_postgis -p 5432 -U word nicaragua
+createdb -O word -T template_postgis -p 5432 -U word panama
+createdb -O word -T template_postgis -p 5432 -U word puertorico
+createdb -O word -T template_postgis -p 5432 -U word st_lucia
+createdb -O word -T template_postgis -p 5432 -U word serranilla_bank
+createdb -O word -T template_postgis -p 5432 -U word st_martin
+createdb -O word -T template_postgis -p 5432 -U word saint_barth
+createdb -O word -T template_postgis -p 5432 -U word st_kitts_nevis
+createdb -O word -T template_postgis -p 5432 -U word st_pierre_miquelon
+createdb -O word -T template_postgis -p 5432 -U word st_vincent_grenadines
+createdb -O word -T template_postgis -p 5432 -U word trinidad_tobago
+createdb -O word -T template_postgis -p 5432 -U word turks_caicos
+createdb -O word -T template_postgis -p 5432 -U word us_virgin_islands
+createdb -O word -T template_postgis -p 5432 -U word argentina
+createdb -O word -T template_postgis -p 5432 -U word bolivia
+createdb -O word -T template_postgis -p 5432 -U word brazil
+createdb -O word -T template_postgis -p 5432 -U word chile
+createdb -O word -T template_postgis -p 5432 -U word colombia
+createdb -O word -T template_postgis -p 5432 -U word ecuador
+createdb -O word -T template_postgis -p 5432 -U word falkland_islands
+createdb -O word -T template_postgis -p 5432 -U word guyana
+createdb -O word -T template_postgis -p 5432 -U word paraguay
+createdb -O word -T template_postgis -p 5432 -U word peru
+createdb -O word -T template_postgis -p 5432 -U word suriname
+createdb -O word -T template_postgis -p 5432 -U word uruguay
+createdb -O word -T template_postgis -p 5432 -U word venezuela
+
+echo
+echo ----------Loading All Data into PostGIS----------
+echo
+
+echo aruba
+osm2pgsql -l -E 3857 -s -k -C 30000 -d aruba -U word -H localhost -P 5432 ~/OSM-data/aruba.osm.pbf
+echo anguilla
+osm2pgsql -l -E 3857 -s -k -C 30000 -d anguilla -U word -H localhost -P 5432 ~/OSM-data/anguilla.osm.pbf
+echo antigua_and_barbuda
+osm2pgsql -l -E 3857 -s -k -C 30000 -d antigua_and_barbuda -U word -H localhost -P 5432 ~/OSM-data/antigua_and_barbuda.osm.pbf
+echo bahamas
+osm2pgsql -l -E 3857 -s -k -C 30000 -d bahamas -U word -H localhost -P 5432 ~/OSM-data/bahamas.osm.pbf
+echo bajo_nuevo_bank
+osm2pgsql -l -E 3857 -s -k -C 30000 -d bajo_nuevo_bank -U word -H localhost -P 5432 ~/OSM-data/bajo_nuevo_bank.osm.pbf
+echo saint_barth
+osm2pgsql -l -E 3857 -s -k -C 30000 -d saint_barth -U word -H localhost -P 5432 ~/OSM-data/saint_barth.osm.pbf
+echo barbados
+osm2pgsql -l -E 3857 -s -k -C 30000 -d barbados -U word -H localhost -P 5432 ~/OSM-data/barbados.osm.pbf
+echo belize
+osm2pgsql -l -E 3857 -s -k -C 30000 -d belize -U word -H localhost -P 5432 ~/OSM-data/belize.osm.pbf
+echo bermuda
+osm2pgsql -l -E 3857 -s -k -C 30000 -d bermuda -U word -H localhost -P 5432 ~/OSM-data/bermuda.osm.pbf
+echo british_virgin_islands
+osm2pgsql -l -E 3857 -s -k -C 30000 -d british_virgin_islands -U word -H localhost -P 5432 ~/OSM-data/british_virgin_islands.osm.pbf
+echo caymen_islands
+osm2pgsql -l -E 3857 -s -k -C 30000 -d caymen_islands -U word -H localhost -P 5432 ~/OSM-data/caymen_islands.osm.pbf
+echo costarica
+osm2pgsql -l -E 3857 -s -k -C 30000 -d costarica -U word -H localhost -P 5432 ~/OSM-data/costarica.osm.pbf
+echo cuba
+osm2pgsql -l -E 3857 -s -k -C 30000 -d cuba -U word -H localhost -P 5432 ~/OSM-data/cuba.osm.pbf
+echo curacao
+osm2pgsql -l -E 3857 -s -k -C 30000 -d curacao -U word -H localhost -P 5432 ~/OSM-data/curacao.osm.pbf
+echo dominica
+osm2pgsql -l -E 3857 -s -k -C 30000 -d dominica -U word -H localhost -P 5432 ~/OSM-data/dominica.osm.pbf
+echo dominican_republic
+osm2pgsql -l -E 3857 -s -k -C 30000 -d dominican_republic -U word -H localhost -P 5432 ~/OSM-data/dominican_republic.osm.pbf
+echo elsalvador
+osm2pgsql -l -E 3857 -s -k -C 30000 -d elsalvador -U word -H localhost -P 5432 ~/OSM-data/elsalvador.osm.pbf
+echo grenada
+osm2pgsql -l -E 3857 -s -k -C 30000 -d grenada -U word -H localhost -P 5432 ~/OSM-data/grenada.osm.pbf
+echo guatemala
+osm2pgsql -l -E 3857 -s -k -C 30000 -d guatemala -U word -H localhost -P 5432 ~/OSM-data/guatemala.osm.pbf
+echo haiti
+osm2pgsql -l -E 3857 -s -k -C 30000 -d haiti -U word -H localhost -P 5432 ~/OSM-data/haiti.osm.pbf
+echo honduras
+osm2pgsql -l -E 3857 -s -k -C 30000 -d honduras -U word -H localhost -P 5432 ~/OSM-data/honduras.osm.pbf
+echo jamaica
+osm2pgsql -l -E 3857 -s -k -C 30000 -d jamaica -U word -H localhost -P 5432 ~/OSM-data/jamaica.osm.pbf
+echo mexico
+osm2pgsql -l -E 3857 -s -k -C 30000 -d mexico -U word -H localhost -P 5432 ~/OSM-data/mexico.osm.pbf
+echo montserrat
+osm2pgsql -l -E 3857 -s -k -C 30000 -d montserrat -U word -H localhost -P 5432 ~/OSM-data/montserrat.osm.pbf
+echo nicaragua
+osm2pgsql -l -E 3857 -s -k -C 30000 -d nicaragua -U word -H localhost -P 5432 ~/OSM-data/nicaragua.osm.pbf
+echo panama
+osm2pgsql -l -E 3857 -s -k -C 30000 -d panama -U word -H localhost -P 5432 ~/OSM-data/panama.osm.pbf
+echo puertorico
+osm2pgsql -l -E 3857 -s -k -C 30000 -d puertorico -U word -H localhost -P 5432 ~/OSM-data/puertorico.osm.pbf
+echo st_lucia
+osm2pgsql -l -E 3857 -s -k -C 30000 -d st_lucia -U word -H localhost -P 5432 ~/OSM-data/st_lucia.osm.pbf
+echo serranilla_bank
+osm2pgsql -l -E 3857 -s -k -C 30000 -d serranilla_bank -U word -H localhost -P 5432 ~/OSM-data/serranilla_bank.osm.pbf
+echo st_martin
+osm2pgsql -l -E 3857 -s -k -C 30000 -d st_martin -U word -H localhost -P 5432 ~/OSM-data/st_martin.osm.pbf
+echo st_kitts_nevis
+osm2pgsql -l -E 3857 -s -k -C 30000 -d st_kitts_nevis -U word -H localhost -P 5432 ~/OSM-data/st_kitts_nevis.osm.pbf
+echo st_pierre_miquelon
+osm2pgsql -l -E 3857 -s -k -C 30000 -d st_pierre_miquelon -U word -H localhost -P 5432 ~/OSM-data/st_pierre_miquelon.osm.pbf
+echo st_vincent_grenadines
+osm2pgsql -l -E 3857 -s -k -C 30000 -d st_vincent_grenadines -U word -H localhost -P 5432 ~/OSM-data/st_vincent_grenadines.osm.pbf
+echo trinidad_tobago
+osm2pgsql -l -E 3857 -s -k -C 30000 -d trinidad_tobago -U word -H localhost -P 5432 ~/OSM-data/trinidad_tobago.osm.pbf
+echo turks_caicos
+osm2pgsql -l -E 3857 -s -k -C 30000 -d turks_caicos  -U word -H localhost -P 5432 ~/OSM-data/turks_caicos.osm.pbf
+echo us_virgin_islands
+osm2pgsql -l -E 3857 -s -k -C 30000 -d us_virgin_islands -U word -H localhost -P 5432 ~/OSM-data/us_virgin_islands.osm.pbf
+echo argentina
+osm2pgsql -l -E 3857 -s -k -C 30000 -d argentina -U word -H localhost -P 5432 ~/OSM-data/argentina.osm.pbf
+echo bolivia
+osm2pgsql -l -E 3857 -s -k -C 30000 -d bolivia -U word -H localhost -P 5432 ~/OSM-data/bolivia.osm.pbf
+echo brazil
+osm2pgsql -l -E 3857 -s -k -C 30000 -d brazil -U word -H localhost -P 5432 ~/OSM-data/brazil.osm.pbf
+echo chile
+osm2pgsql -l -E 3857 -s -k -C 30000 -d chile -U word -H localhost -P 5432 ~/OSM-data/chile.osm.pbf
+echo colombia
+osm2pgsql -l -E 3857 -s -k -C 30000 -d colombia -U word -H localhost -P 5432 ~/OSM-data/colombia.osm.pbf
+echo ecuador
+osm2pgsql -l -E 3857 -s -k -C 30000 -d ecuador -U word -H localhost -P 5432 ~/OSM-data/ecuador.osm.pbf
+echo falkland_islands
+osm2pgsql -l -E 3857 -s -k -C 30000 -d falkland_islands -U word -H localhost -P 5432 ~/OSM-data/falkland_islands.osm.pbf
+echo guyana
+osm2pgsql -l -E 3857 -s -k -C 30000 -d guyana -U word -H localhost -P 5432 ~/OSM-data/guyana.osm.pbf
+echo paraguay
+osm2pgsql -l -E 3857 -s -k -C 30000 -d paraguay -U word -H localhost -P 5432 ~/OSM-data/paraguay.osm.pbf
+echo peru
+osm2pgsql -l -E 3857 -s -k -C 30000 -d peru -U word -H localhost -P 5432 ~/OSM-data/peru.osm.pbf
+echo suriname
+osm2pgsql -l -E 3857 -s -k -C 30000 -d suriname -U word -H localhost -P 5432 ~/OSM-data/suriname.osm.pbf
+echo uruguay
+osm2pgsql -l -E 3857 -s -k -C 30000 -d uruguay -U word -H localhost -P 5432 ~/OSM-data/uruguay.osm.pbf
+echo venezuela
+osm2pgsql -l -E 3857 -s -k -C 30000 -d venezuela -U word -H localhost -P 5432 ~/OSM-data/venezuela.osm.pbf
+
+echo ---------- DONE ----------

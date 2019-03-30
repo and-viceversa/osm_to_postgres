@@ -1,0 +1,18 @@
+#!/bin/bash
+
+# Uses wget to download from geofabrick excerpts
+
+echo
+echo ----------Starting OSM Download----------
+
+echo
+echo ----------Downloading Central America----------
+wget -S --timeout=60 --random-wait http://download.geofabrik.de/central-america-latest.osm.pbf -P ~/OSM-data
+
+echo
+echo ----------Downloading South America----------
+
+wget -S --timeout=60 --random-wait http://download.geofabrik.de/south-america-latest.osm.pbf -P ~/OSM-data
+
+echo
+echo ----------Downloads Complete!----------

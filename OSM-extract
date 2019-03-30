@@ -1,0 +1,110 @@
+#!/bin/bash
+
+echo
+echo ----------Extracting Central America-----------
+echo
+echo ----------OVERWRITING EXISTING FILES!----------
+
+echo aruba
+osmium extract -p ~/OSM-data/ADM0_A3_ABW.geojson -s smart -f .osm.pbf ~/OSM-data/central-america-latest.osm.pbf -O -o ~/OSM-data/aruba.osm.pbf
+echo anguilla
+osmium extract -p ~/OSM-data/ADM0_A3_AIA.geojson -s smart -f .osm.pbf ~/OSM-data/central-america-latest.osm.pbf -O -o ~/OSM-data/anguilla.osm.pbf
+echo antigua_and_barbuda
+osmium extract -p ~/OSM-data/ADM0_A3_ATG.geojson -s smart -f .osm.pbf ~/OSM-data/central-america-latest.osm.pbf -O -o ~/OSM-data/antigua_and_barbuda.osm.pbf
+echo bahamas
+osmium extract -p ~/OSM-data/ADM0_A3_BHS.geojson -s smart -f .osm.pbf ~/OSM-data/central-america-latest.osm.pbf -O -o ~/OSM-data/bahamas.osm.pbf
+echo bajo nuevo bank
+osmium extract -p ~/OSM-data/ADM0_A3_BJN.geojson -s smart -f .osm.pbf ~/OSM-data/central-america-latest.osm.pbf -O -o ~/OSM-data/bajo_nuevo_bank.osm.pbf
+echo saint_barth
+osmium extract -p ~/OSM-data/ADM0_A3_BLM.geojson -s smart -f .osm.pbf ~/OSM-data/central-america-latest.osm.pbf -O -o ~/OSM-data/saint_barth.osm.pbf
+echo belize
+osmium extract -p ~/OSM-data/ADM0_A3_BLZ.geojson -s smart -f .osm.pbf ~/OSM-data/central-america-latest.osm.pbf -O -o ~/OSM-data/belize.osm.pbf
+echo barbados
+osmium extract -p ~/OSM-data/ADM0_A3_BRB.geojson -s smart -f .osm.pbf ~/OSM-data/central-america-latest.osm.pbf -O -o ~/OSM-data/barbados.osm.pbf
+echo costarica
+osmium extract -p ~/OSM-data/ADM0_A3_CRI.geojson -s smart -f .osm.pbf ~/OSM-data/central-america-latest.osm.pbf -O -o ~/OSM-data/costarica.osm.pbf
+echo cuba
+osmium extract -p ~/OSM-data/ADM0_A3_CUB.geojson -s smart -f .osm.pbf ~/OSM-data/central-america-latest.osm.pbf -O -o ~/OSM-data/cuba.osm.pbf
+echo curacao
+osmium extract -p ~/OSM-data/ADM0_A3_CUW.geojson -s smart -f .osm.pbf ~/OSM-data/central-america-latest.osm.pbf -O -o ~/OSM-data/curacao.osm.pbf
+echo caymen_islands
+osmium extract -p ~/OSM-data/ADM0_A3_CYM.geojson -s smart -f .osm.pbf ~/OSM-data/central-america-latest.osm.pbf -O -o ~/OSM-data/caymen_islands.osm.pbf
+echo dominica
+osmium extract -p ~/OSM-data/ADM0_A3_DMA.geojson -s smart -f .osm.pbf ~/OSM-data/central-america-latest.osm.pbf -O -o ~/OSM-data/dominica.osm.pbf
+echo dominican_republic
+osmium extract -p ~/OSM-data/ADM0_A3_DOM.geojson -s smart -f .osm.pbf ~/OSM-data/central-america-latest.osm.pbf -O -o ~/OSM-data/dominican_republic.osm.pbf
+echo guatemala
+osmium extract -p ~/OSM-data/ADM0_A3_GTM.geojson -s smart -f .osm.pbf ~/OSM-data/central-america-latest.osm.pbf -O -o ~/OSM-data/guatemala.osm.pbf
+echo honduras
+osmium extract -p ~/OSM-data/ADM0_A3_HND.geojson -s smart -f .osm.pbf ~/OSM-data/central-america-latest.osm.pbf -O -o ~/OSM-data/honduras.osm.pbf
+echo jamaica
+osmium extract -p ~/OSM-data/ADM0_A3_JAM.geojson -s smart -f .osm.pbf ~/OSM-data/central-america-latest.osm.pbf -O -o ~/OSM-data/jamaica.osm.pbf
+echo st_kitts_nevis
+osmium extract -p ~/OSM-data/ADM0_A3_KNA.geojson -s smart -f .osm.pbf ~/OSM-data/central-america-latest.osm.pbf -O -o ~/OSM-data/st_kitts_nevis.osm.pbf
+echo st_lucia
+osmium extract -p ~/OSM-data/ADM0_A3_LCA.geojson -s smart -f .osm.pbf ~/OSM-data/central-america-latest.osm.pbf -O -o ~/OSM-data/st_lucia.osm.pbf
+echo st_martin
+osmium extract -p ~/OSM-data/ADM0_A3_MAF.geojson -s smart -f .osm.pbf ~/OSM-data/central-america-latest.osm.pbf -O -o ~/OSM-data/st_martin.osm.pbf
+echo mexico
+osmium extract -p ~/OSM-data/ADM0_A3_MEX.geojson -s smart -f .osm.pbf ~/OSM-data/central-america-latest.osm.pbf -O -o ~/OSM-data/mexico.osm.pbf
+echo montserrat
+osmium extract -p ~/OSM-data/ADM0_A3_MSR.geojson -s smart -f .osm.pbf ~/OSM-data/central-america-latest.osm.pbf -O -o ~/OSM-data/montserrat.osm.pbf
+echo nicaragua
+osmium extract -p ~/OSM-data/ADM0_A3_NIC.geojson -s smart -f .osm.pbf ~/OSM-data/central-america-latest.osm.pbf -O -o ~/OSM-data/nicaragua.osm.pbf
+echo panama
+osmium extract -p ~/OSM-data/ADM0_A3_PAN.geojson -s smart -f .osm.pbf ~/OSM-data/central-america-latest.osm.pbf -O -o ~/OSM-data/panama.osm.pbf
+echo puertorico
+osmium extract -p ~/OSM-data/ADM0_A3_PRI.geojson -s smart -f .osm.pbf ~/OSM-data/central-america-latest.osm.pbf -O -o ~/OSM-data/puertorico.osm.pbf
+echo serranilla_bank
+osmium extract -p ~/OSM-data/ADM0_A3_SER.geojson -s smart -f .osm.pbf ~/OSM-data/central-america-latest.osm.pbf -O -o ~/OSM-data/serranilla_bank.osm.pbf
+echo elsalvador
+osmium extract -p ~/OSM-data/ADM0_A3_SLV.geojson -s smart -f .osm.pbf ~/OSM-data/central-america-latest.osm.pbf -O -o ~/OSM-data/elsalvador.osm.pbf
+echo st_pierre_miquelon
+osmium extract -p ~/OSM-data/ADM0_A3_SPM.geojson -s smart -f .osm.pbf ~/OSM-data/central-america-latest.osm.pbf -O -o ~/OSM-data/st_pierre_miquelon.osm.pbf
+echo st_martin
+osmium extract -p ~/OSM-data/ADM0_A3_SXM.geojson -s smart -f .osm.pbf ~/OSM-data/central-america-latest.osm.pbf -O -o ~/OSM-data/st_martin.osm.pbf
+echo turks_caicos
+osmium extract -p ~/OSM-data/ADM0_A3_TCA.geojson -s smart -f .osm.pbf ~/OSM-data/central-america-latest.osm.pbf -O -o ~/OSM-data/turks_caicos.osm.pbf
+echo st_vincent_grenadines
+osmium extract -p ~/OSM-data/ADM0_A3_VCT.geojson -s smart -f .osm.pbf ~/OSM-data/central-america-latest.osm.pbf -O -o ~/OSM-data/st_vincent_grenadines.osm.pbf
+echo british_virgin_islands
+osmium extract -p ~/OSM-data/ADM0_A3_VGB.geojson -s smart -f .osm.pbf ~/OSM-data/central-america-latest.osm.pbf -O -o ~/OSM-data/british_virgin_islands.osm.pbf
+echo us_virgin_islands
+osmium extract -p ~/OSM-data/ADM0_A3_VIR.geojson -s smart -f .osm.pbf ~/OSM-data/central-america-latest.osm.pbf -O -o ~/OSM-data/us_virgin_islands.osm.pbf
+
+echo
+echo ----------Extracting South America----------
+
+echo argentina
+osmium extract -p ~/OSM-data/ADM0_A3_ARG.geojson -s smart -f .osm.pbf ~/OSM-data/south-america-latest.osm.pbf -O -o ~/OSM-data/argentina.osm.pbf
+echo bolivia
+osmium extract -p ~/OSM-data/ADM0_A3_BOL.geojson -s smart -f .osm.pbf ~/OSM-data/south-america-latest.osm.pbf -O -o ~/OSM-data/bolivia.osm.pbf
+echo brazil
+osmium extract -p ~/OSM-data/ADM0_A3_BRA.geojson -s smart -f .osm.pbf ~/OSM-data/south-america-latest.osm.pbf -O -o ~/OSM-data/brazil.osm.pbf
+echo chile
+osmium extract -p ~/OSM-data/ADM0_A3_CHL.geojson -s smart -f .osm.pbf ~/OSM-data/south-america-latest.osm.pbf -O -o ~/OSM-data/chile.osm.pbf
+echo colombia
+osmium extract -p ~/OSM-data/ADM0_A3_COL.geojson -s smart -f .osm.pbf ~/OSM-data/south-america-latest.osm.pbf -O -o ~/OSM-data/colombia.osm.pbf
+echo ecuador
+osmium extract -p ~/OSM-data/ADM0_A3_ECU.geojson -s smart -f .osm.pbf ~/OSM-data/south-america-latest.osm.pbf -O -o ~/OSM-data/ecuador.osm.pbf
+echo falkland_islands
+osmium extract -p ~/OSM-data/ADM0_A3_FLK.geojson -s smart -f .osm.pbf ~/OSM-data/south-america-latest.osm.pbf -O -o ~/OSM-data/falkland_islands.osm.pbf
+echo grenada
+osmium extract -p ~/OSM-data/ADM0_A3_GRD.geojson -s smart -f .osm.pbf ~/OSM-data/south-america-latest.osm.pbf -O -o ~/OSM-data/grenada.osm.pbf
+echo guyana
+osmium extract -p ~/OSM-data/ADM0_A3_GUY.geojson -s smart -f .osm.pbf ~/OSM-data/south-america-latest.osm.pbf -O -o ~/OSM-data/guyana.osm.pbf
+echo peru
+osmium extract -p ~/OSM-data/ADM0_A3_PER.geojson -s smart -f .osm.pbf ~/OSM-data/south-america-latest.osm.pbf -O -o ~/OSM-data/peru.osm.pbf
+echo paraguay
+osmium extract -p ~/OSM-data/ADM0_A3_PRY.geojson -s smart -f .osm.pbf ~/OSM-data/south-america-latest.osm.pbf -O -o ~/OSM-data/paraguay.osm.pbf
+echo suriname
+osmium extract -p ~/OSM-data/ADM0_A3_SUR.geojson -s smart -f .osm.pbf ~/OSM-data/south-america-latest.osm.pbf -O -o ~/OSM-data/suriname.osm.pbf
+echo trinidad_tobago
+osmium extract -p ~/OSM-data/ADM0_A3_TTO.geojson -s smart -f .osm.pbf ~/OSM-data/south-america-latest.osm.pbf -O -o ~/OSM-data/trinidad_tobago.osm.pbf
+echo uruguay
+osmium extract -p ~/OSM-data/ADM0_A3_URY.geojson -s smart -f .osm.pbf ~/OSM-data/south-america-latest.osm.pbf -O -o ~/OSM-data/uruguay.osm.pbf
+echo venezuela
+osmium extract -p ~/OSM-data/ADM0_A3_VEN.geojson -s smart -f .osm.pbf ~/OSM-data/south-america-latest.osm.pbf -O -o ~/OSM-data/venezuela.osm.pbf
+
+echo
+echo ----------Extraction Complete!----------

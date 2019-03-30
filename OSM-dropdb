@@ -1,0 +1,61 @@
+#!/bin/bash
+
+echo
+echo ----------DROPPING ALL OSM DATABASES----------
+echo
+
+dropdb anguilla
+dropdb antigua_and_barbuda
+dropdb argentina
+dropdb aruba
+dropdb bahamas
+dropdb bajo_nuevo_bank
+dropdb barbados
+dropdb belize
+dropdb bermuda
+dropdb bolivia
+dropdb brazil
+dropdb british_virgin_islands
+dropdb caymen_islands
+dropdb chile
+dropdb colombia
+dropdb costarica
+dropdb curacao
+dropdb cuba
+dropdb dominica
+dropdb dominican_republic
+dropdb ecuador
+dropdb elsalvador
+dropdb falkland_islands
+dropdb grenada
+dropdb guatemala
+dropdb guyana
+dropdb haiti
+dropdb honduras
+dropdb jamaica
+dropdb mexico
+dropdb montserrat
+dropdb nicaragua
+dropdb panama
+dropdb paraguay
+dropdb peru
+dropdb puertorico
+dropdb saint_barth
+dropdb serranilla_bank
+dropdb st_kitts_nevis
+dropdb st_lucia
+dropdb st_martin
+dropdb st_pierre_miquelon
+dropdb st_vincent_grenadines
+dropdb suriname
+dropdb trinidad_tobago
+dropdb turks_caicos
+dropdb uruguay
+dropdb us_virgin_islands
+dropdb venezuela
+
+echo
+echo ----------Drop commands finished----------
+echo
+psql -l
+echo

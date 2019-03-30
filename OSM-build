@@ -1,0 +1,5 @@
+#!/bin/bash
+
+osm-download
+osm-extract
+osm-load2postgres
